@@ -1,0 +1,95 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "clarify-hospital"
+  },
+  "apps": [
+    {
+      "root": "client",
+      "outDir": "dist.dev",
+      "assets": [
+        "assets",
+        "favicon.ico",
+        "img",
+        "fonts",
+        "i18n"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "./app/polyfills.ts",
+      "tsconfig": "../tsconfig.json",
+      "test": "./unitTest.config.ts",
+      "testTsconfig": "./tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "./styles/font.css",
+        "../node_modules/cropperjs/dist/cropper.min.css",
+        "../node_modules/primeng/resources/themes/omega/theme.css",
+        "../node_modules/primeng/resources/primeng.min.css",
+        "../node_modules/font-awesome/css/font-awesome.min.css",
+        "../node_modules/ion-rangeslider/css/ion.rangeSlider.css",
+        "../node_modules/ion-rangeslider/css/ion.rangeSlider.skinFlat.css",
+        "../node_modules/ng2-dnd/bundles/style.css",
+        "./styles/bootstrap.css",
+        "./styles/components.css",
+        "./styles/colors.css",
+        "./styles/icomoon.css",
+        "./styles/datatable.theme.prism.css",
+        "./styles/datatable.icons.css",
+        "./styles/datatable.component.css",
+        "./styles/app.less",
+        "./styles/core.css",
+        "./styles/careprism.css",
+        "./shared/jointjs/joint.core.css",
+        "./shared/jointjs/joint.css",
+        "../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+        "../node_modules/codemirror/lib/codemirror.css"
+      ],
+      "scripts": [
+        "../node_modules/crypto-js/crypto-js.js",
+        "../node_modules/crypto-js/hmac-sha256.js",
+        "../node_modules/crypto-js/enc-base64.js",
+        "../node_modules/pace-js/pace.min.js",
+        "./shared/commonjs/jquery.min.js",
+        "./shared/commonjs/highcharts.js",
+        "./shared/commonjs/d3.js",
+        "./shared/commonjs/vizuly.js",
+        "../node_modules/auth0-js/build/auth0.min.js",
+        "./shared/commonjs/socket.io.min.js",
+        "./styles/bootstrap.min.js",
+        "../node_modules/cropperjs/dist/cropper.min.js",
+        "../node_modules/ion-rangeslider/js/ion.rangeSlider.min.js",
+        "../node_modules/file-saver/FileSaver.min.js",
+        "../node_modules/lodash/lodash.min.js",
+        "./shared/jointjs/joint_backbone_lodash.min.js",
+          "../node_modules/pdfjs-dist/build/pdf.worker.min.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "test/e2e/ui_test/protractor_conf_chrome/protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "files": "client/**/*.ts",
+      "project": "./tsconfig.json",
+      "exclude": ["**/node_modules/**/*","**/test/**/*"]
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "ngKarma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
