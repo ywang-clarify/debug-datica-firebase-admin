@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/ywang-clarify/debug-datica-firebase-admin#readme",
   "dependencies": {
-    "firebase-admin": "=5.12.0"
+    "firebase-admin": "^5.12.1"
   }
 }
