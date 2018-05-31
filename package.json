@@ -1,0 +1,22 @@
+{
+  "name": "debug-datica-firebase-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ywang-clarify/debug-datica-firebase-admin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ywang-clarify/debug-datica-firebase-admin/issues"
+  },
+  "homepage": "https://github.com/ywang-clarify/debug-datica-firebase-admin#readme",
+  "dependencies": {
+    "firebase-admin": "^5.12.1"
+  }
+}
